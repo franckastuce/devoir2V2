@@ -23,8 +23,75 @@
 </head>
 
 <body>
+    <!--head building-->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingsix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsesix" aria-expanded="false" aria-controls="flush-collapsesix">
+                Jeux de dés
+            </button>
+        </h2>
+        <!--head end-->
+        <!--rules-->
+        <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Règles :<br>
+                Le jeu comprend 2 joueurs sur un seul et même écran.
+                Chaque joueur possède un score temporaire (sous le joueur) et un score global (résultat en cour).<br>
+                À chaque tour, le joueur a son score temporaire initialisé à 0 et peut lancer un dé autant de fois qu'il
+                le souhaite.<br>
+                Le résultat d’un lancer est ajouté au score temporaire.<br>
+                Lors de son tour, le joueur peut décider à tout moment de:<br>
+                - Cliquer sur l’option “SAUVEGARDE”, qui permet d’envoyer les points du score temporaire vers le GLOBAL.
+                Ce sera alors le tour de l’autre joueur.<br>
+                - Lancer le dé. S’il obtient un 1, son score temporaire est perdu et c’est la fin de son tour.
+                Le premier joueur qui atteint les 100 points sur global gagne le jeu.<br>
+                - le "D" est un "D" a 10 faces.
+            </div>
+        </div>
+        <!--rules end-->
+    </div>
+    <!--head end-->
+    <!--body building-->
+    <div class="contenaire">
+        <div class="title"><button id="new" type="button" class="btn btn-info">NEW GAME</button></div>
+        <div class="bodyJeux">
+            <div class="player1">
+                <div class="gros">
+                    <p>JOUEUR 1</p>
+                    <div id="round1" class="ct">0</div>
+                </div>
+                <div class="result primary">
+                    <div class="curent1">résultat en cour
+                        <div id="scoreCurent1" class="ct">00</div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="center">
+                <div class="de" id="de">0</div>
+                <div class="btn-group-vertical p1">
+                    <div id="roll"><button type="buttonR" class="btn btn-primary">lancer de D J1</button></i>
+                    </div>
+                    <div id="reset"><button type="buttonH" class="btn btn-primary">SAUVEGARDE</button></div>
+                </div>
+            </div>
+            <div class="player2">
+                <div class="gros">
+                    <p>JOUEUR 2</p>
+                    <div id="round2" class="ct">0</div>
+                </div>
+                <div class="result success">
+                    <div class="curent2">résultat en cour
+                        <div id="scoreCurent2" class="ct">00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--body end-->
 </body>
+
 <script src="app.js"></script>
 
 </html>
