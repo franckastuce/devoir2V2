@@ -15,8 +15,6 @@ let sauveguarde2 = document.getElementById("S2");
 let I = document.getElementById('I');
 let J = document.getElementById("J");
 
-
-
 //fonction remise a zero
 function reset() {
     D.innerHTML = "0"; //mettre l'img zero
