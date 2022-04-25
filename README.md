@@ -10,7 +10,7 @@ mise en place de tout le css
 mise en place de tout le js git status
     1er mise en place pour le début des test
     25/04/22
-2eme test html refonte du code et amelioration 
+2eme test html refonte du code et amelioration plus mise place des régles et changement du fond écran
 2eme test du css en forme de carte pour un meilleur visuel et un peu de transparance
 2eme test JS amelioration code avec passage du J1 au J2 calcule -calcule du tour-nouvelle partie et enregistrement des noms.
 
@@ -24,6 +24,6 @@ setting up all the css
 implementation of all jsgit status
     1st set up for the beginning of the tests
     25/04/22
-    2nd html test code redesign and improvement
+2nd html test redesign of the code and improvement plus implementation of the rules and change of the screen background
 2nd test of the css in the form of a map for a better visual and a little transparency
 2nd JS test code improvement with passage from J1 to J2 calculates -calculates the turn-new game and registration of names.

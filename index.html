@@ -24,7 +24,21 @@
 
 <body>
     <h1>jeux devoir 2 de studi carte Hazard</h1>
-    <p>écrire les régles</p>
+    <div class="accordion-body">Règles :<br>
+        Le jeu comprend 2 joueurs sur un seul et même écran.
+        Chaque joueur possède un score temporaire (sous le joueur) et un score global (résultat en cour).<br>
+        À chaque tour, le joueur a son score temporaire initialisé à 0 et peut lancer un dé autant de fois qu'il
+        le
+        souhaite.<br> Le
+        résultat d’un lancer est ajouté au score temporaire.<br>
+        Lors de son tour, le joueur peut décider à tout moment de:<br>
+        - Cliquer sur l’option “SAUVEGARDE”, qui permet d’envoyer les points du score temporaire vers le GLOBAL.
+        Ce sera alors le
+        tour de l’autre joueur.<br>
+        - Lancer le dé. S’il obtient un 1, son score temporaire est perdu et c’est la fin de son tour.
+        Le premier joueur qui atteint les 100 points sur global gagne le jeu.<br>
+        - le "D" est un "D" a 10 faces.
+    </div>
     <div class="container">
         <div class="newpart">
             <button class="new" id="new">nouvelle partie</button>
@@ -36,14 +50,14 @@
                 <!--la pastille qui s'affiche pour indiquer quel joueur joue-->
                 <div class="score" id="score1">0</div>
                 <!--score actuelle-->
-                <p>sore du tour</p>
+                <p>résultat en cour</p>
                 <div class="sauvegarde" id="S1">00</div>
                 <!--la div de sauvegarde du tour-->
             </div>
             <div class="panel">
                 <div class="de" id="D">0</div>
                 <button class="button" id="jet">lancer</button>
-                <button class="button" id="save">joueur suivant</button>
+                <button class="button" id="save">sauvegarde</button>
             </div>
             <div class="player">
                 <p class="text2">player 2</p>
@@ -51,7 +65,7 @@
                 <!--la pastille qui s'affiche pour indiquer quel joueur joue-->
                 <div class="score" id="score2">0</div>
                 <!--score actuelle-->
-                <p>sore du tour</p>
+                <p>résultat en cour</p>
                 <div class="sauvegarde" id="S2">00</div>
                 <!--la div de sauvegarde du tour-->
             </div>
