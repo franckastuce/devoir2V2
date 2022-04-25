@@ -1,5 +1,6 @@
-//test de liaison
-//alert("bonjour le monde")
+//test fonctionement des liens
+//alert("bonjour");
+
 
 const commencer = document.getElementById("new");
 const text = document.querySelector(".text");
@@ -15,6 +16,15 @@ let sauveguarde2 = document.getElementById("S2");
 let I = document.getElementById('I');
 let J = document.getElementById("J");
 
+//new names and recup
+function noms() {
+    let p1 = prompt("NOM du joueur 1 ?");
+    let p2 = prompt("NOM du joueur 2 ?");
+    text.innerHTML = p1;
+    text2.innerHTML = p2;
+
+}
+
 //fonction remise a zero
 function reset() {
     D.innerHTML = "0"; //mettre l'img zero
@@ -24,19 +34,21 @@ function reset() {
     sauveguarde2.innerHTML = "00";
 }
 
-//nouvelle partie
+//nouvelle partie   ok
 commencer.addEventListener("click", () => {
     //console.log("commencer");
     alert("UNE NOUVELLE PARTIE VA COMMENCER, LES COMPTEURS SONT REMIS A ZERO")
     reset()
-
+    noms()
 });
+
 
 
 //function P1
 function oneScore() {
     //recuperation de D dans score1
     score1.innerHTML = parseInt(Number(D.innerHTML) + Number(score1.innerHTML));
+
 };
 
 function towScore() {
@@ -53,11 +65,10 @@ function hazard() {
 function pasDeChance() {
     if (D.innerHTML === "1") {
         alert('AIII, PAS DE CHANCE, TU AS FAIT "1" AU TOUR DU JOUEUR SUIVANT')
-        score1.innerHTML = 0;
-        score2.innerHTML = 0;
+        score1.innerHTML = "0";
+        score2.innerHTML = "0";
     }
 }
-
 //fonction de lancer de dés
 
 jet.addEventListener("click", () => {
@@ -79,13 +90,13 @@ function ajout2() {
 function win() {
     //console.log("win");
     if (sauveguarde1.innerHTML > 100) {
-        alert(`nous avons un gagnant avec ${sauveguarde1.innerHTML} points`)
+        alert(`${text.innerHTML} avec ${sauveguarde1.innerHTML} points gagne`)
         score2.innerHTML = "0";
         sauveguarde2.innerHTML = "00";
     }
 
     if (sauveguarde2.innerHTML > 100) {
-        alert(`nous avons un gagnant avec ${sauveguarde2.innerHTML} points`)
+        alert(`${text2.innerHTML} avec ${sauveguarde2.innerHTML} points gagne`)
         score1.innerHTML = "0";
         sauveguarde1.innerHTML = "00";
     }
